@@ -26,7 +26,7 @@ class SignInFragment : Fragment() {
 
     override fun onViewCreated(view: View, savedInstanceState: Bundle?) {
         binding.signUpButton.setOnClickListener {
-            navCon.navigate(R.id.action_signInFragment_to_welcomeSplashScreenFragment)
+            navCon.navigate(R.id.action_signInFragment_to_loginFragment)
         }
     }
 }

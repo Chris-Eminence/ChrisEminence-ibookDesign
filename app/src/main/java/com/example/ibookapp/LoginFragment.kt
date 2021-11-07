@@ -13,9 +13,9 @@ import com.example.ibookapp.databinding.FragmentOnBoardingBinding
 
 class LoginFragment : Fragment() {
 
-    private lateinit var _binding : FragmentLoginBinding
+    private lateinit var _binding: FragmentLoginBinding
     private val binding get() = _binding
-    private lateinit var navCon : NavController
+    private lateinit var navCon: NavController
 
 
     override fun onCreateView(
@@ -29,7 +29,14 @@ class LoginFragment : Fragment() {
 
     override fun onViewCreated(view: View, savedInstanceState: Bundle?) {
         binding.signInButton.setOnClickListener {
+            navCon.navigate(R.id.action_loginFragment_to_welcomeSplashScreenFragment)
+
+
+        }
+
+        binding.setUpAccountText.setOnClickListener {
             navCon.navigate(R.id.action_loginFragment_to_signInFragment)
         }
     }
+
 }

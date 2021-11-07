@@ -34,6 +34,9 @@
         <action
             android:id="@+id/action_signInFragment_to_welcomeSplashScreenFragment"
             app:destination="@id/welcomeSplashScreenFragment" />
+        <action
+            android:id="@+id/action_signInFragment_to_loginFragment"
+            app:destination="@id/loginFragment" />
     </fragment>
     <fragment
         android:id="@+id/welcomeSplashScreenFragment"
@@ -47,5 +50,8 @@
         <action
             android:id="@+id/action_loginFragment_to_signInFragment"
             app:destination="@id/signInFragment" />
+        <action
+            android:id="@+id/action_loginFragment_to_welcomeSplashScreenFragment"
+            app:destination="@id/welcomeSplashScreenFragment" />
     </fragment>
 </navigation>
